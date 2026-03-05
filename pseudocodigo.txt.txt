@@ -1,0 +1,41 @@
+PSEUDOCODIGO BUSQUEDA SECUENCIAL
+
+Inicio
+    arreglo = lista de numeros
+    valor = numero a buscar
+
+    Para i desde 0 hasta tamaño del arreglo
+        Si arreglo[i] == valor
+            Mostrar posicion
+            Terminar
+        FinSi
+    FinPara
+
+    Mostrar "No encontrado"
+Fin
+
+
+PSEUDOCODIGO BUSQUEDA BINARIA
+
+Inicio
+    arreglo ordenado
+    valor = numero a buscar
+
+    izquierda = 0
+    derecha = tamaño - 1
+
+    Mientras izquierda <= derecha
+        medio = (izquierda + derecha) / 2
+
+        Si arreglo[medio] == valor
+            Mostrar posicion
+            Terminar
+
+        Si valor > arreglo[medio]
+            izquierda = medio + 1
+        Sino
+            derecha = medio - 1
+    FinMientras
+
+    Mostrar "No encontrado"
+Fin
